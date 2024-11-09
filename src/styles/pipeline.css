@@ -1,0 +1,92 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Space between items */
+  margin: 20px 0;
+}
+
+.stage {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 8px; /* Adjusted padding */
+  width: calc(20% - 20px); /* Adjust width to fit 4 items in a row with spacing */
+  margin: 10px; /* Add margin for spacing */
+  transition: transform 0.2s;
+  text-align: center; /* Center text inside the stage */
+}
+
+.stage:hover {
+  transform: scale(1.02);
+}
+
+.stage h2 {
+  color: #9d68ce;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 15px; /* Adjust padding as needed */
+  margin: 10px 0;
+  transition: background-color 0.3s;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  min-height: 100px; /* Set a minimum height for consistency */
+  max-width: 250px; /* Set a maximum width to prevent stretching */
+  width: 100%; /* Allow the card to take full width of its container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center; /* Center text inside the card */
+}
+
+.card h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.add-opportunity {
+  background-color: #28a745; /* Change to a green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Make the button take full width of the card */
+}
+
+.add-opportunity:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+  .stage {
+      width: calc(50% - 20px); /* 2 items in a row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .stage {
+      width: 100%; /* 1 item in a row on very small screens */
+  }
+}

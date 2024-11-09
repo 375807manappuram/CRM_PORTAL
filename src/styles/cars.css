@@ -1,0 +1,16 @@
+.card img {
+    max-width: 100%;
+    max-height: 300px; /* Adjust as needed */
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 1rem; /* Adjust padding as needed */
+}
+
+.card {
+    margin-bottom: 20px; /* Space between cards */
+}
+.text-black {
+    color: black;
+}
